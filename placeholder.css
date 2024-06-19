@@ -1,8 +1,26 @@
 body {
-    background-color: #b0deff;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     font-family: "Comfortaa", sans-serif;
   }
 
-  .container {
+  .container { 
     margin-top: 10px;
+  }  
+
+  @media (min-width: 768px) {
+    .container {
+        max-width: 1020px;
+    }
+  }
+
+  .text-center {
+    display: flex;
+  }
+
+  .btn {
+    flex-grow: 1;
+    margin: 15px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
   }  
