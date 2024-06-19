@@ -1,6 +1,5 @@
 const userList = document.getElementById('user-list');
-
-fetch('users.json')
+fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(users => {
         users.forEach(user => {
