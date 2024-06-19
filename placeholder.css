@@ -1,37 +1,8 @@
 body {
     background-color: #b0deff;
     font-family: "Comfortaa", sans-serif;
-    margin: 0;
   }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 15px;
-  }
-  
-  .button-container button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 25px; 
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 5px; 
-    font-size: 16px;
-  }
-  
-  .button-container button:hover {
-    background-color: #45a049;
-  }
-  
 
-  @media (max-width: 320px) {
-    .button-container button {
-      font-size: 14px; 
-    }
-  }
+  .container {
+    margin-top: 10px;
+  }  
