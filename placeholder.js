@@ -1,13 +1,14 @@
 const userList = document.getElementById('user-list');
+
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(users => {
         users.forEach(user => {
             const userCard = `
-        <div class="col-md-4">
-          <div class="card mb-3">
+            <div class="col-md-4 mb-3">
+            <div class="card border-primary rounded shadow">
             <div class="card-body">
-              <h5 class="card-title"><b>${user.name}</b></h5>
+                <h5 class="card-title text-primary"><b>${user.name}</b></h5>
               <p class="card-text">
                 <span class="fw-bold"><b>ID:</b></span> ${user.id}<br>
                 <span class="fw-bold"><b>Ім'я користувача:</b></span> ${user.username}<br>
